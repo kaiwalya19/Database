@@ -1,0 +1,515 @@
+Interview Questions
+
+
+Q 1. What is DBMS used for? (TCS)
+
+DBMS, commonly known as Database Management System, is an application system whose main purpose revolves around the data. This is a system that allows its user to store the data, define it, retrieve it and update the information about the data inside the database.
+
+ 
+
+Q 2. Why is the use of DBMS recommended? Explain by listing some of its major advantages.(WIPRo)
+
+Some of the major advantages of DBMS are as follows:
+
+Controlled Redundancy
+
+ Data Sharing
+
+Backup and Recovery Facility
+
+Enforcement of Integrity Constraints
+
+Independence of data
+
+ 
+
+Q 3.What is Schema? (Amazon)
+
+Schema is a structural view of a database. Moreover, a schema diagram refers to representing a database as a diagram. It represents the relationship between the tables. However, it does not show the data present in the tables.
+
+ 
+
+Q 4.What is Instance? (Adobe)
+
+An instance of the database is the data in the database at a specific moment of time. The database schema defines the variable declarations in tables and the values of these variables at a specific time are called the instance of the database.
+
+ 
+
+Q 5.Explain the three layers of 3 tier architecture. 
+
+Three layers: 
+
+1) Client layer
+
+2) Business layer
+
+3) Data layer
+
+ 
+
+
+Q 1. What is cardinality? (Capgemini)
+
+One to One, One to many, and many to many are different types of cardinalities. In a database, high cardinality means more unique values are stored in a column and vice versa.
+
+ 
+
+Q 2. What Does ERD Stand for, and What is it? (TCS)
+
+ERD stands for Entity Relationship Diagram and is a logical entity representation, defining the relationships between the entities. Entities reside in boxes, and arrows symbolize relationships.
+
+ 
+
+Q 3. What is an entity? (Wipro)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “Entity”.
+
+  
+
+Q 4. Explain a real life example of generalization. (Amazon)
+
+For example, Saving and Current account types entities can be generalised and an entity with name Account can be created, which covers both.
+
+ 
+
+Q 5. How does generalization differ from specialization? ( TCS,Infosys)
+
+Generalization is a bottom-up approach in which two lower level entities combine to form a higher level entity.
+
+Specialization is opposite to Generalization. It is a top-down approach in which one higher level entity can be broken down into two lower level entities.
+
+ 
+
+Q 6.How is the degree assigned to a relationship? (Adobe)
+
+Depending upon the number of entities involved, a degree is assigned to relationships.
+
+ 
+
+Q 7. What is a composite entity? (Veritas)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “composite Entity”.
+
+ 
+
+Q 8. Explain derived attributes.
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “derived attribute”.
+
+
+
+
+
+Interview Question
+
+
+Q 1. Give a quick idea of the term RDBMS? (Adobe)
+
+ 
+
+It helps in storing or managing data across multiple tables. The best part is that you can define relationships among different data entries using tables. Relationships are generally expressed through values, not pointers.
+
+ 
+
+Q 2. How will you define a relational database model? (Accenture)
+
+ 
+
+It defines the relationship among different databases and how they are connected. When multiple databases are connected, it creates flexibility and can be used within a software app as needed.
+
+ 
+
+Q 3. What are the components of RDBMS?  (Vmware)
+
+ 
+
+Each relation in an RDBMS is given a “Name” that will be unique among others. There are rows and columns in each relation; columns represent attributes and rows as Tuples.
+
+Name => Attributes => Tuples
+
+ 
+
+Q 4. What is an E-R Model? (Infosys)
+
+It consists of entities and relational objects. Entities can be understood by the collection of attributes in the database.
+
+ 
+
+Q 5. Tell me something about various data abstraction levels? (Goldman Sachs)
+
+ 
+
+In RDBMS, data can be abstracted at three different levels.
+
+ They are given below -.
+
+Physical Level -> Logical Level -> View 1, View 2 & View 3
+
+The physical level is available at the bottom, giving you a detailed idea of the data storage. The Logical level at the next stage finds the logic among data tables and how to group similar data for easy access. At the top, there is a view level that gives information about the complete database and various views of a database.
+
+ 
+
+Q 6. How are RDBMS preferable options over the DBMS? (Amazon)
+
+ 
+
+It minimizes redundancy and integrity can be maintained. It maintains data consistency and allows data sharing to other databases. It follows a set of rules to satisfy storage standards and maintains security.
+
+ 
+
+ 
+
+Q 7. What are the two specific rules that you should follow for each RDBMS to maintain data integrity? (Flipkart)
+
+ 
+
+These are divided into two categories that are necessary to learn by every RDBMS expert. 
+
+To maintain the integrity of an Entity, the Primary key should never contain the NULL values.
+
+To maintain referential integrity, the foreign key should be used that is defined as the Primary key for another table.
+
+ 
+
+Q 8. Does RDBMS follow an object-oriented approach or not? (Amazon)
+
+ 
+
+Well, I think RDBMS follows the object-oriented approach. The object-oriented model is defined based on the collection of objects. An object instantiates the value stored in instance variables. If objects are sharing the same properties or methods, then they can be grouped to form a class. The same process is followed in RDBMS as well.
+
+ 
+
+Q 9.What are the different features of an RDBMS?(Oracle)
+
+ 
+
+Name- Every relation in a relational database should have a name which is unique among all other relations.
+
+Attributes- Each column in a relation is called an attribute.
+
+Tuples-Each and every row in a relation is called a tuple. A tuple defines a collection of attribute values.
+
+ 
+
+The entity integrity constraint states that primary key value can't be null.
+
+This is because the primary key value is used to identify individual rows in relation and if the primary key has a null value, then we can't identify those rows.
+
+A table can contain a null value other than the primary key field.
+
+
+
+Interview Questions
+
+
+ 
+
+Q 1.What are different types of Normalization Levels or Normalization Forms? (Goldman sachs)
+
+The different types of Normalization Forms are:
+
+ 
+
+First Normal Form: Duplicate columns from the same table need to be eliminated. We have to create separate tables for each group of related data and identify each row with a unique column or set of columns (Primary Key)
+
+Second Normal Form: First it should meet the requirement of first normal form. Removes the subsets of data that apply to multiple rows of a table and place them in separate tables. Relationships must be created between the new tables and their predecessors through the use of foreign keys.
+
+Third Normal Form: First it should meet the requirements of the second normal form. Remove columns that are not depending upon the primary key.
+
+Fourth Normal Form: There should not be any multi-valued dependencies.
+
+ 
+
+ 
+
+Q 2.What is Normalization? (TCS)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “Normalization”.
+
+ 
+
+Q 3.What is Denormalization? (Amazon)
+
+De-normalization is the process of optimizing the read performance of a database by adding redundant data or by grouping data. Denormalization is used in OLAP systems.
+
+ 
+
+Q 4. What is BCNF? (Infosys)
+
+Answer: BCNF is the Boyce Codd Normal form. It is the higher version of 3Nf which does not have any multiple overlapping candidate keys.
+
+ 
+
+Q 5. What is a functional dependency in the DBMS?(Matercard)
+
+This is basically a constraint which is useful in describing the relationship among the different attributes in a relation.
+
+ 
+
+Example: If there is some relation ‘R1’ which has 2 attributes as Y and Z then the functional dependency among these 2 attributes can be shown as Y->Z which states that Z is functionally dependent on Y.
+
+ 
+
+Q 6.What are the  goals of normalization? (ADOBE)
+
+It means decomposing (dividing/breaking down) a 'big' un-normalized table (file) into several smaller tables by:
+
+Eliminating insertion, update and delete anomalies.
+
+Establishing functional dependencies.
+
+Removing transitive dependencies.
+
+Reducing non-key data redundancy
+
+ 
+
+Q 7.How do you convert normalization to an ER diagram? (Amazon)
+
+Normalization utilizes association among attributes within an entity table to accomplish its objective. Since an ERD also utilizes association among attributes as a basis to identify entity type structure, it is possible to apply normalization principles during the conceptual data modeling phase.
+
+ 
+
+Q 8.When is functional dependency said to be fully functional dependent? (L&T)
+
+To fulfill the criteria of fully functional dependency, the relation must meet the requirement of functional dependency.
+
+A functional dependency ‘A’ and ‘B’ are said to be fully functional dependent when removal of any attribute say ‘X’ from ‘A’ means the dependency does not hold anymore.
+
+ 
+
+Q 9.Explain trivial functional dependency. (Siemens)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “trivial functional dependency”.
+
+ 
+
+Q 10. Explain the transitive property.(Accenture)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “Transitive property”.
+
+ Interview Questions
+
+
+ 
+
+Q 1. What is Relational Algebra? (Wipro)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “Relational Algebra”.
+
+ 
+
+Q 2. Types of operations in relational algebra.(Accenture)
+
+The fundamental operations in relational algebra are select, project, union, set difference, Cartesian product, and rename.
+
+ 
+
+Q 3. Explain the unary and binary operation in relational algebra.  (TCS)
+
+The select, project, and rename operations are called unary operations, because they operate on one relation.
+
+The other three operations operate on pairs of relations and are, therefore, called binary operations.
+
+ 
+
+Q 4.Why relational algebra is important in DBMS? (Mastercard)
+
+Relational algebra is very important for several reasons: 1. it provides a formal foundation for relational model operations. Whereas the algebra defines a set of operations for the relational model, the relational calculus provides a higher-level declarative language for specifying relational queries.
+
+ 
+
+Q 5. What are different set operations? (Amazon)
+
+ Union 
+
+ Intersection 
+
+ Set difference 
+
+ Cartesian product
+
+ 
+
+Q 6. Explain Union and intersection between relations.(Capgemini)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “Union And Intersection”.
+
+ 
+
+Q 7. Explain the different unary operators in relational algebra.( Vmware)
+
+Select  
+
+Project  
+
+Rename
+
+ 
+
+ Q 8. Difference between select and project operation.(Adobe)
+
+The Select operation operates horizontally on the table, on the other hand  the Project operator works on a single table vertically.
+
+ 
+
+Q 9. What is a cartesian product in relational algebra?(Veritas)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “Cartesian product”.
+
+ 
+
+Q 10. Explain  join operation. (Amdocs)
+
+Please refer to the notes for definitions of the aforementioned operating systems        under the heading “Join”.
+
+ Interview Questions
+
+ 
+
+ 
+
+Q 1. What is SQL? (TCS)
+
+SQL stands for Structured Query Language. It is the standard language for relational database management systems. It is especially useful in handling organized data composed of entities (variables) and relations between different entities of the data.
+
+ 
+
+Q 2. What are the different commands in SQL?  (Myntra)
+
+ 
+
+Data Definition Language (DDL) – It allows you to perform various operations on the database such as CREATE, ALTER, and DELETE objects.
+
+Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to insert, update, delete and retrieve data from the database.
+
+Data Control Language(DCL) – It allows you to control access to the database. Example – Grant, Revoke access permissions.
+
+Transaction control Language(TCL)
+
+Example - Rollback ,commit
+
+ 
+
+Q 3. What are different types of DBMS? (Amazon) 
+
+There are two types of DBMS:
+
+Relational Database Management System: The data is stored in relations (tables). Example – MySQL.
+
+Non-Relational Database Management System: There is no concept of relations, tuples and attributes.  Example – MongoDB
+
+ 
+
+Q 4. What do you mean by table and field in SQL? (IBM)
+
+A table refers to a collection of data in an organised manner in the form of rows and columns. A field refers to the number of columns in a table.
+
+
+
+Q 1.If we drop a table, does it also drop related objects like constraints, indexes, columns, default, views and stored procedures? (ZS)
+
+Yes, SQL Server drops all related objects, which exist inside a table like constraints, indexes, columns, defaults etc. But dropping a table will not drop views and stored procedures as they exist outside the table.
+
+ 
+
+Q 2. What is a join? (MICROSOFT)
+
+This is a keyword used to query data from more tables based on the relationship between the fields of the tables. Keys play a major role when JOINs are used.
+
+ 
+
+Q 3. What are the types of joining and explain each? (ADOBE)
+
+There are various types of join that can be used to retrieve data and it depends on the relationship between tables.
+
+Inner Join.
+
+Inner join returns rows when there is at least one match of rows between the tables.
+
+Right Join.
+
+Right join returns rows that are common between the tables and all rows of the Right-hand side table. Simply, it returns all the rows from the right-hand side table even though there are no matches in the left-hand side table.
+
+Left Join.
+
+ Left join returns rows that are common between the tables and all rows of the Left-hand side table. Simply, it returns all the rows from the Left-hand side table even though there are no matches in the Right-hand side table.
+
+ 
+
+Q 4. What is the difference between cross join and natural join? (SIEMENS)
+
+The cross join produces the cross product or Cartesian product of two tables whereas the natural join is based on all the columns having the same name and data types in both the tables.
+
+ 
+
+Q 5. What is Self-Join? (DELOITTE)
+
+Self-join is set to be a query used to compare to itself. This is used to compare values in a column with other values in the same column in the same table. ALIAS ES can be used for the same table comparison.
+
+ 
+
+Q 6. What is the difference between cross join and natural join? (INFOSYS)
+
+The cross join produces the cross product or Cartesian product of two tables whereas the natural join is based on all the columns having the same name and data types in both the tables.
+
+
+
+
+Interview Questions
+
+ 
+
+ 
+
+Q 1. What is a Primary key? (L&T)
+
+A Primary key is a column (or collection of columns) or a set of columns that uniquely identifies each row in the table.
+
+Uniquely identifies a single row in the table
+
+Null values not allowed
+
+ 
+
+Q 2. What is a Unique key? (Persistent)
+
+Uniquely identifies a single row in the table.
+
+Multiple values allowed per table.
+
+Null values allowed.
+
+ 
+
+Q 3. What is a Foreign key in SQL? (Mastercard)
+
+Foreign key maintains referential integrity by enforcing a link between the data in two tables.
+
+The foreign key in the child table references the primary key in the parent table.
+
+The foreign key constraint prevents actions that would destroy links between the child and parent tables.
+
+ 
+
+Q 4. What is a View? (BAJAJ )
+
+A view is a virtual table that consists of a subset of data contained in a table. Since views are not present, it takes less space to store. Views can have data of one or more tables combined and it depends on the relationship.
+
+ 
+
+Q 5. What are Views used for? (AMAZON)
+
+A view refers to a logical snapshot based on a table or another view. It is used for the following reasons:
+
+Restricting access to data.
+
+Making complex queries simple.
+
+Ensuring data independence.
+
+Providing different views of the same data.
+
+ 
+
+ 
