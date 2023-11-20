@@ -510,6 +510,160 @@ Ensuring data independence.
 
 Providing different views of the same data.
 
+
+Q 1. What is DDL? (TCS) 
+
+DDL (Data Definition Language): It is used to define the database structure such as tables. It includes three statements such as CREATE, ALTER, and DROP.
+
+ 
+
+Q 2.Difference between DDL, DML commands?(ADOBE)
+
+Data Definition Language (DDL) statements are used to define the database structure or schema.
+
+Data Manipulation Language (DML) statements are used for managing data within schema objects. 
+
+ 
+
+Q 3. Explain different commands in  DML. (FLIPKART)
+
+The DML statements used for managing data within schema objects which deal with data manipulation.
+
+DML commands are not auto-committed. It means changes are not permanent to the database, they can be rolled back.
+
+ 
+
+Q 4. Difference between commit and rollback. (MASTERCARD)
+
+COMMIT validates the modifications made by the current transaction.
+
+COMMIT occurs when the transaction gets executed successfully.
+
+ROLLBACK erases the modifications made by the current transaction.
+
+ROLLBACK occurs when the transaction is aborted in the middle of the execution.
+
+ 
+
+Q 5. Explain Grant and Revoke. (MYNTRA)
+
+Grant: It used to provide any user access privileges or other privileges for the database.
+
+Revoke:The revoke command removes user access rights or privileges to the database objects. 
+
+
+
+
+Q 1. What kind of data structure is an index? ( Adobe)
+
+In most of the cases, B-Tree data structure is used to store the indexes. This is because of the time efficiency of B-Trees. In other words, B-trees are traversed, searched, inserted, deleted and updated in logarithmic time. 
+
+ 
+
+Q 2. A table can have multiple non-clustered indexes, but only one clustered index. Why?(Amazon)
+
+If a table has a clustered index, then its records are sorted based on the column on which the clustered index is created. Therefore, if we create multiple clustered indexes, we cannot sort the table record for all those columns. Only one time sorting based on one column for which clustering is done is valid.
+
+ 
+
+Q 3.What is index and types of index?
+
+Two main types of indexing methods are 1)Primary Indexing 2) Secondary Indexing.
+
+ 
+
+Q 4.Is the primary key clustered index? (Goldman Sachs)
+
+A primary key is a unique index that is clustered by default. By default means that when you create a primary key, if the table is not clustered yet, the primary key will be created as a clustered unique index.
+
+ 
+
+Q 5.Why are B tree indexes popular? (Mastercard)
+
+The B-tree enables the database to find a leaf node quickly. The tree traversal is a very efficient operation so efficient that I refer to it as the first power of indexing. It works almost instantly even on a huge data set.
+
+
+
+Interview Questions
+
+ 
+
+Q 1. What is meant by ACID properties in DBMS? (TCS)
+
+ACID stands for Atomicity, Consistency, Isolation, and Durability in a DBMS; these are those properties that ensure a safe and secure way of sharing data among multiple users.
+
+ 
+
+Q 2. What are conflict serializable schedules? (Adobe)
+
+Ans: A schedule S of n transactions is serializable if it is equivalent to some serial schedule of the same n transactions.
+
+ 
+
+Q 3. What are conflict equivalent schedules? (Amazon)
+
+Ans: Two schedules are said to be conflict equivalent if the order of any two conflicting operations is the same in both schedules.
+
+
+Q 4 . What is view equivalence? (HSBC)
+
+Ans: Two schedules S and S’ are said to be view equivalent if the following three conditions hold :
+
+1. Both S and S’ contain the same set of transactions with the same operations in them.
+
+2. If any read operation read(x) reads a value written by a write operation or the original value of x the same conditions must hold in the other schedule for the same read(x) operation.
+
+3. If an operation write1(y) is the last operation to write the value of y in schedule S then the same operation must be the last operation in schedule S’.
+
+ 
+
+Q 5. What is view serializable? (Myntra)
+
+Ans: A schedule is said to be view serializable if it is view equivalent with some serial schedule.
+
+ 
+
+Q 6. What is the result equivalent?
+
+Ans: Two schedules are called result equivalent if they produce the same final state of the database.
+
+
+
+
+Q 1. Describe concurrency control? ( Morgan stanley)
+
+ Concurrency control is the process of managing simultaneous operations on a database so that database integrity is not compromised. There are two approaches to concurrency control.
+
+They are Locking (controlling access to data items using locks) and Versioning (using Multi-Version Concurrency Control) respectively.
+
+ 
+
+Q 2.What are different locks? ( Adobe)
+
+Shared Lock 
+
+Exclusive Lock
+
+ 
+
+Q 3.What is a shared lock? (Infosys)
+
+It is also known as Read-only lock. As the name suggests it can be shared between transactions because while holding this lock the transaction does not have the permission to update data on the data item. S-lock is requested using lock-S instruction.
+
+ 
+
+Q 4.What is an exclusive lock? (Vmware)
+
+Data items can be both read as well as written.This is Exclusive and cannot be held simultaneously on the same data item. X-lock is requested using lock-X instruction.
+
+ 
+
+Q 5. What is starvation? (Myntra)
+
+Starvation or Livelock is the situation when a transaction has to wait for an indefinite period of time to acquire a lock.
+
+ 
+
  
 
  
